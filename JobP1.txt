@@ -1,0 +1,9 @@
+Hacer 5 preguntas de negocio
+Por ejemplo: Cual es el salario promedio de los candidatos
+
+De que pais provienen la mayoria de los candidatos
+A;os de experiencia profesiona promedio de los candidatos / OK
+Sueldo mas alto segun cada pais
+Cuantoss candidatos con mas de 10 a;os de experiencia hay por pais
+Cual es el pais con el sueldo promedio mas alto
+
