@@ -1,0 +1,117 @@
+skills_id,skill_name
+0,C++
+1,Python
+2,Git
+3,PostgreSQL
+4,Bash/Shell
+5,HTML/CSS
+6,JavaScript
+7,Node.js
+8,SQL
+9,TypeScript
+10,Express
+11,React.js
+12,Vue.js
+13,AWS
+14,C
+15,Java
+16,Perl
+17,Ruby
+18,Ruby on Rails
+19,PHP
+20,jQuery
+21,Laravel
+22,MySQL
+23,Docker
+24,Kotlin
+25,Kubernetes
+26,Angular
+27,Spring
+28,Heroku
+29,DynamoDB
+30,Delphi
+31,Go
+32,Scala
+33,Terraform
+34,Google Cloud Platform
+35,Microsoft Azure
+36,MongoDB
+37,Assembly
+38,C#
+39,Matlab
+40,Unity 3D
+41,Rust
+42,PowerShell
+43,ASP.NET Core
+44,Microsoft SQL Server
+45,Redis
+46,VBA
+47,ASP.NET
+48,Svelte
+49,DigitalOcean
+50,Couchbase
+51,MariaDB
+52,SQLite
+53,Ansible
+54,Yarn
+55,Oracle
+56,Django
+57,FastAPI
+58,Gatsby
+59,Dart
+60,Objective-C
+61,Swift
+62,Angular.js
+63,Flask
+64,Firebase
+65,R
+66,Elasticsearch
+67,Julia
+68,Clojure
+69,Puppet
+70,Xamarin
+71,Symfony
+72,Chef
+73,F#
+74,Unreal Engine
+75,IBM DB2
+76,Groovy
+77,Cassandra
+78,IBM Cloud or Watson
+79,Haskell
+80,Drupal
+81,LISP
+82,Elixir
+83,APL
+84,Erlang
+85,Pulumi
+86,Deno
+87,Crystal
+88,Oracle Cloud Infrastructure
+89,Flow
+90,COBOL
+91,npm
+92,Homebrew
+93,CouchDB
+94,Neo4j
+95,Google Cloud
+96,VMware
+97,OVH
+98,Next.js
+99,Nuxt.js
+100,OpenStack
+101,Cloud Firestore
+102,Blazor
+103,Firebase Realtime Database
+104,Linode
+105,Fastify
+106,MATLAB
+107,Managed Hosting
+108,Fortran
+109,Lua
+110,SAS
+111,Play Framework
+112,Phoenix
+113,OCaml
+114,Colocation
+115,Solidity
