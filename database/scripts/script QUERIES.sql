@@ -71,3 +71,24 @@ WHERE sk.skill_name IS NULL AND cd.country = 'Czech Republic'
 GROUP BY sk.skill_name, w.work_id, cd.country
 ORDER BY total ASC LIMIT 10; 
 
+
+#QUERY AVG YEARS_CODE + YEARS CODE PRO VS MAIN_BRANCH
+
+SELECT * FROM work;
+
+SELECT  w.main_branch 'Type of professional', ROUND (AVG(w.years_code)) AS 'Avg Years coding',ROUND (AVG(w.years_code_pro)) AS 'Avg Years coding professionally', COUNT(cd.candidate_id) AS '# of candidates' FROM work AS w
+LEFT JOIN candidate AS cd ON w.candidate_id = cd.candidate_id
+WHERE cd.country = 'United States of America'
+GROUP BY main_branch;
+
+
+
+#QUERY MENTAL HEALTH VS EMPLOYED
+SELECT * FROM recruitment_information;
+
+SELECT CASE WHEN ri.employed = 1 THEN 'Yes' WHEN ri.employed = 0 THEN 'No' END AS 'Employment status', ri.mental_health AS 'Mental Health diagnosis', COUNT(cd.candidate_id) AS '# of candidates' FROM recruitment_information AS ri
+LEFT JOIN candidate AS cd ON ri.candidate_id = cd.candidate_id
+WHERE cd.country = 'United States of America'
+GROUP BY ri.mental_health, ri.employed
+ORDER BY ri.employed DESC;
+
