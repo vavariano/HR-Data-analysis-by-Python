@@ -41,7 +41,7 @@ LEFT JOIN work_skills AS wsk ON w.work_id = wsk.work_id
 LEFT JOIN skills AS sk ON wsk.skills_id = sk.skills_id
 WHERE cd.country = 'United States of America'
 GROUP BY sk.skill_name
-ORDER BY total ASC LIMIT 10;
+ORDER BY total DESC LIMIT 10;
 
 #JOIN PARA NULOS
 SELECT sk.skill_name, COUNT(*) AS datos_nulos FROM work_skills AS wsk
@@ -92,3 +92,13 @@ WHERE cd.country = 'United States of America'
 GROUP BY ri.mental_health, ri.employed
 ORDER BY ri.employed DESC;
 
+
+SELECT COUNT(cd.candidate_id), cd.gender, AVG(w.years_code_pro) FROM work AS w
+LEFT JOIN candidate AS cd ON w.candidate_id = cd.candidate_id
+WHERE country = 'United States of America'
+GROUP BY cd.gender;
+
+SELECT COUNT(cd.candidate_id),  w.main_branch FROM work AS w
+LEFT JOIN candidate AS cd ON w.candidate_id = cd.candidate_id
+WHERE country = 'United States of America'
+GROUP BY w.main_branch;

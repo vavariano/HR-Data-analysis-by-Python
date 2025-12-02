@@ -27,7 +27,8 @@ SELECT `work`.`work_id`,
     `work`.`candidate_id`
 FROM `hr_data_project`.`work`
 LEFT JOIN candidate AS cd ON cd.candidate_id = `work`.`candidate_id`
-WHERE country = 'United States of America';
+WHERE country = 'United States of America'
+ORDER BY `work`.`work_id` ASC;
 
 #WORK_SKILLS
 
@@ -40,13 +41,14 @@ LEFT JOIN candidate AS cd ON w.candidate_id = cd.candidate_id
 WHERE country = 'United States of America';
 
 #SKILLS
-SELECT `skills`.`skills_id`,
+SELECT DISTINCT `skills`.`skills_id`,
     `skills`.`skill_name`
 FROM `hr_data_project`.`skills`
 LEFT JOIN work_skills AS ws ON `skills`.`skills_id` = ws.skills_id
 LEFT JOIN work AS w ON ws.`work_id` = w.work_id
 LEFT JOIN candidate AS cd ON w.candidate_id = cd.candidate_id
-WHERE country = 'United States of America';
+WHERE country = 'United States of America'
+ORDER BY skills_id;
 
 
 
